@@ -1,0 +1,54 @@
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of the month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12)
+# │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
+# │ │ │ │ │                                   7 is also Sunday on some systems)
+# │ │ │ │ │
+# │ │ │ │ │
+# * * * * * command to execute
+41 * * * * /bin/echo "Im running updating_webpage.sh" | logger
+41 * * * * /root/updating_webpage.sh
+
+   20  chmod +x updating_webpage.sh
+   21  ls -l
+   22  echo $PATH
+   23  ./updating_webpage.sh
+   24  vim updating_webpage
+   25  vim updating_webpage.sh
+   26  vim welcome.sh
+   27  ls -l
+   28  rm welcome.sh
+   29  sed -i 's/^/#/g' /etc/httpd/conf.d/welcome.conf
+   30  vim welcome.conf
+   31  cat /var/www/html/html.index
+   32  cat /var/www/html/index.html
+   33  ./updating_webpage.sh
+   34  ./ updating_webpage.sh
+   35  sed -i 's/^/#/g' /etc/httpd/conf.d/welcome.conf
+   36  cat /etc/httpd/conf.d/welcome.conf
+   37  cat /var/www/html/index.html
+   38  ./ updating_webpage
+   39  ./ updating_webpage.sh
+   40  cat updating_webpage.sh
+   41  cat /var/html/index.html
+   42  cat /var/log/messages
+   43  cat /var/www/html/index.html
+   44  vim updating_webpage.sh
+   45  vim updating_webpage.sh
+   46  ./ updating_webpage.sh
+   47  cat /var/www/html/index.html
+   48  ls
+   49  path
+   50  $PATH
+   51  crontab -e
+   52  cat /var/www/html/index/html
+   53  cat /var/www/html/index.html
+   54  ls
+   55  vim updating_webpage.sh 
+   56  ./updating_webpage.sh 
+   57  vim updating_webpage.sh 
+   58  ./updating_webpage.sh 
+   59  vim updating_webpage.sh 
+   60  crontab -e
+   61  history
