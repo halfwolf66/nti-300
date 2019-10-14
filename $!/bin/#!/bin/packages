@@ -1,4 +1,5 @@
 #!/bin/bash
+yum -y install vim
 for packages in $(cat packages.txt); do 
   yum -y install $packages
 done
