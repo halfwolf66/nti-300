@@ -1,4 +1,6 @@
+
 yum -y install git
+cd git
 git config --global user.name "Kyle McCormick"
 git config --global user.email "kyle.mccormick@seattlecolleges.edu"
 git clone https://github.com/halfwolf66/nti-300
