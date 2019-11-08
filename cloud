@@ -15,19 +15,19 @@ compute = discovery.build('compute', 'v1', credentials=credentials)
 
 project = 'nti-300-2019'
 zone = 'us-northwest-a'
-name = 'startup-script'
+name = 'Final'
 
 def list instances (compute, project, zone):
   result compute.instances (). list(project=project, zone=
   return result[items 1 ]
 
 def create instance( compute, project, zone, name):
-  startup script = open('startup-script.sh, 'r).read ()
-  image response = compute. images (.get From Family From Family From Family!
+  startup script = open('startup-script.sh, 'r).read () #must create a startup-script
+  image response = compute. images (.get From Family From Family From Family! # tells it we want centos 7
     projects centos-cloud family='centos-7 . execute()
     
     source disk image image response selfLink
-    machine_type = "zones/%s/machine Types/f1-micro" % zone
+    machine_type = "zones/%s/machine Types/f1-micro" % zone #tells what kind of machine, in this case, we want the f1 micro.
 
     config = {
         'name' : name,
@@ -62,9 +62,9 @@ def create instance( compute, project, zone, name):
               ]
           }],              
           
-          # Enable https/http for select instances
-           "labels": {
-           "http-server": "",
+          # Enable https/http for select instances #allows you to browse in a web browser
+           "labels": {                             #allows you to browse in a web browser
+           "http-server": "",                      #allows you to browse in a web browser
           "https-server": ""
            },
 
