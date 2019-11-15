@@ -21,7 +21,7 @@ def list instances (compute, project, zone):
   result compute.instances (). list(project=project, zone=
   return result[items 1 ]
 
-def create instance( compute, project, zone, name):
+def create instance(compute, project, zone, name):
   startup script = open('startup-script.sh, 'r).read () #must create a startup-script
   image response = compute. images (.get From Family From Family From Family! # tells it we want centos 7
     projects centos-cloud family='centos-7 . execute()
