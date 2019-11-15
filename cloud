@@ -98,4 +98,4 @@ newinstance=create_instance(compute, project, zone, name)
 instances = list_instances(compute, project, zone)
 
 pprint.pprint(newinstance)
-Pprint.pprint(instances)
+pprint.pprint(instances)
